@@ -17,8 +17,8 @@ class OpenrtmAist < Formula
     system "make"
     system "make", "install"
 
-    prefix.install 'bin'
-    prefix.install 'share'
-    prefix.install 'lib'
+    bin.install 'bin'
+    share.install 'share'
+    lib.install 'lib'
   end
 end
