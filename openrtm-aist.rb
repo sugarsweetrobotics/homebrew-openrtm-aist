@@ -29,7 +29,7 @@ class OpenrtmAist < Formula
     sha256 "5bd2bffc50dc26b5cd0547ed5f7979f81278cba66a078a21c5587a20f03dfabf"
   end
 
-  def pour_bottle?
+  def pour_bottle? do
     return true
   end
 end
