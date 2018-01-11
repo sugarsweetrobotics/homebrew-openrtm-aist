@@ -4,7 +4,7 @@ class OpenrtmAist < Formula
   homepage "http://openrtm.org"
 
   url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/OpenRTM-aist-1.1.2.tar.gz"
-  sha256 "35f03c0e60ed5c05ccd46a264c6613b98fb1d1b242c1721536bd52f2ff740ba1"
+  sha256 "081718976837b381382892a83506aa73cc695dc98ab65741251741c26ae9259a"
   head "https://svn.openrtm.org/OpenRTM-aist/tags/RELEASE1.1.2"
   version "1.1.2"
 
