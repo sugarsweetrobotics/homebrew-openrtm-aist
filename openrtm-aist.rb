@@ -25,7 +25,7 @@ class OpenrtmAist < Formula
 
 
   bottle do
-    root_url "https://github.com/sugarsweetrobotics/homebrew-openrtm-aist-bottles"
+    root_url "https://raw.githubusercontent.com/sugarsweetrobotics/homebrew-openrtm-aist-bottles/master"
     sha256 "12bef50482c15fd679fab8c7d8a740294cb8ee866b333604b472973d2d0d8936" => :high_sierra
   end
 
