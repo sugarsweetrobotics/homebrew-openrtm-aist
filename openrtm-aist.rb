@@ -14,6 +14,11 @@ class OpenrtmAist < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}"
+    system "make"
     system "make", "install"
+
+    prefix.install 'bin'
+    prefix.install 'share'
+    prefix.install 'lib'
   end
 end
