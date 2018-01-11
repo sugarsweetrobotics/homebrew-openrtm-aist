@@ -7,6 +7,10 @@ class OpenRTM < Formula
   head "https://svn.openrtm.org/OpenRTM-aist/tags/RELEASE1.1.2"
   version "1.1.2"
 
+  depends_on "libtool"
+  depends_on "doxygen"
+  depends_on "omniorb"
+
   def install
     system "./configure", "--prefix=#{prefix}"
     system "make", "install"
