@@ -3,26 +3,36 @@ require "formula"
 class OpenrtmAistPython < Formula
   homepage "http://openrtm.org"
 
-  url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/OpenRTM-aist-Python-1.1.2.tar.gz"
-  sha256 "601e45ccc49ab2099d8bb6c01ae4b2cf7da79422c96b7e00f68b9492438852b1"
-  #  head "https://svn.openrtm.org/OpenRTM-aist/tags/RELEASE1.1.2"
+  # url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/OpenRTM-aist-Python-1.1.2.tar.gz"
+  # sha256 "601e45ccc49ab2099d8bb6c01ae4b2cf7da79422c96b7e00f68b9492438852b1"
+  # head "https://svn.openrtm.org/OpenRTM-aist/tags/RELEASE1.1.2"
   version "1.1.2"
 
   depends_on "omniorb-python"
 
-  def install
-    #    system "./configure", "--prefix=#{prefix}"
-    # system "./configure"
-    # system "make"
-    # system "make", "install"
-
-    #    system "python", "setup.py", "install"
-    system "pip", "install", "-e", "."
-
-    # bin.install 'bin'
-    # share.install 'share'
-    # lib.install 'lib'
+  resource "openrtm" do
+    url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/OpenRTM-aist-Python-1.1.2.tar.gz"
+    sha256 "601e45ccc49ab2099d8bb6c01ae4b2cf7da79422c96b7e00f68b9492438852b1"
   end
+
+  def install
+    virtualenv_install_with_resources
+  end
+
+
+  # def install
+  #    system "./configure", "--prefix=#{prefix}"
+  # system "./configure"
+  # system "make"
+  # system "make", "install"
+
+  #    system "python", "setup.py", "install"
+  # system "pip", "install", "-e", "."
+
+  # bin.install 'bin'
+  # share.install 'share'
+  # lib.install 'lib'
+  # end
 
 
   #  bottle do
