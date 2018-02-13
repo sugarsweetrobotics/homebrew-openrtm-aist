@@ -1,6 +1,7 @@
 require "formula"
 
 class OpenrtmAistPython < Formula
+  include Language::Python::Virtualenv
   homepage "http://openrtm.org"
   # url ""
 
