@@ -8,7 +8,7 @@ class OmniorbPython < Formula
   #  head "https://svn.openrtm.org/OpenRTM-aist/tags/RELEASE1.1.2"
   version "4.2.2"
 
-  depends_on "omniorb@4.2.1-2"
+  depends_on "omniorb"
 
   def install
     system "python setup.py install"
