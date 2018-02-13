@@ -11,6 +11,9 @@ class OmniorbPython < Formula
   depends_on "omniorb"
 
   def install
-    system "python setup.py install"
+    system "./configure", "--prefix=#{prefix}"
+    # system "./configure"
+    # system "make"
+    system "make", "install"
   end
 end
