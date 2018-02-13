@@ -16,7 +16,8 @@ class OpenrtmAistPython < Formula
     # system "make"
     # system "make", "install"
 
-    system "python", "setup.py", "install"
+    #    system "python", "setup.py", "install"
+    system "pip", "install", "-e", "."
 
     # bin.install 'bin'
     # share.install 'share'
