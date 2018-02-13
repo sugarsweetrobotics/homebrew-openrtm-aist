@@ -24,6 +24,7 @@ class OpenrtmAistPython < Formula
   def install
   #  system "python", *Language::Python.setup_install_args(prefix)
   #    system "./configure", "--prefix=#{prefix}"
+    system "python", "setup.py", "build"
     system "python", "setup.py", "--no-user-cfg", "install", "--prefix=#{prefix}", "--record=installed.txt"
   # system "./configure"
   # system "make"
