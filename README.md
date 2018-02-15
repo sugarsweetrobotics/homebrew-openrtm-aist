@@ -19,14 +19,10 @@ $ brew install openrtm-aist-python
 
 ```shell
 $ brew tap sugarsweetrobotics/openrtm-aist
-$ brew install openrtp
+$ brew cask install openrtp
 ```
 
-### If you want to use it from terminal,
-
-```shell
-$ open -a OpenRTP-1.1.2
-```
+You can use OpenRTP from Launchpad
 
 
 
