@@ -1,6 +1,7 @@
-require "formula"
+#require "formula"
 
-class Openrtp < Formula
+#class Openrtp < Formula
+cask 'openrtp' do 
   homepage "http://openrtm.org"
 
   #url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/OpenRTP-1.1.2.dmg"
