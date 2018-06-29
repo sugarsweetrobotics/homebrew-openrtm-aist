@@ -8,7 +8,7 @@ class Openrtp < Formula
 
   version "1.1.0rc5"
 
-  def instal
+  def install
     bin.install openrtp
   end
 
