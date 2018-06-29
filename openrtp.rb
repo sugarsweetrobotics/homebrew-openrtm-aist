@@ -9,7 +9,7 @@ class Openrtp < Formula
   version "1.1.0rc5"
 
   def install
-    bin.install "openrtp"
+    bin.install Dir['*']
   end
 
   #  def pour_bottle? do
