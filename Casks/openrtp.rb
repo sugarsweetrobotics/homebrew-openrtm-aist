@@ -12,8 +12,7 @@ cask 'openrtp' do
 
   version "1.1.0rc5"
 
-  #  depends_on macos: '>= :leopard'
-
+  # depends_on macos: '>= :leopard'
   # app 'OpenRTP.app', target: 'OpenRTP-1.1.2.app'
   def instal
     bin.install openrtp
