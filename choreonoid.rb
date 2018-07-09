@@ -3,8 +3,8 @@ require "formula"
 class Choreonoid < Formula
   homepage "http://choreonoid.org"
 
-  url "https://github.com/sugarsweetrobotics/choreonoid.git" :branch => 'osx'
-  head 'https://github.com/sugarsweetrobotics/choreonoid.git" :branch => 'osx'
+  url "https://github.com/sugarsweetrobotics/choreonoid.git"
+  head 'https://github.com/sugarsweetrobotics/choreonoid.git' :branch => 'osx'
   version "1.6.0"
 
   depends_on "openrtm-aist"
