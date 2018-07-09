@@ -7,7 +7,7 @@ class Choreonoid < Formula
   head 'https://github.com/rcmdnk/homebrew-brewall.git', :branch => 'osx'
   version "1.6.0"
 
-  depends_on "openrtm"
+  depends_on "openrtm-aist"
   depends_on "eigen"
   depends_on "assimp"
   depends_on "boost"
