@@ -8,6 +8,7 @@ class OpenrtmAist < Formula
   head "https://svn.openrtm.org/OpenRTM-aist/tags/RELEASE1.1.2"
   version "1.1.2"
 
+  depends_on "cmake"
   depends_on "libtool"
   depends_on "doxygen"
   depends_on "omniorb"

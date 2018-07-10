@@ -7,6 +7,7 @@ class Choreonoid < Formula
   head 'https://github.com/sugarsweetrobotics/choreonoid.git', :branch => 'osx'
   version "1.6.0"
 
+  depends_on "cmake"
   depends_on "openrtm-aist"
   depends_on "eigen"
   depends_on "assimp"
@@ -28,7 +29,7 @@ class Choreonoid < Formula
   depends_on "pcl"
 
   def install
-    system "cmake", ".", "-DCMAKE_PREFIX_PATH=/usr/local/opt/qt", "-DUSE_PYTHON3=OFF", "-DBUILD_CORBA_PLUGIN=ON", "-DBUILD_ODE_PLUGIN=ON", "-DBUILD_OPENRTM_PLUGIN=ON", "-DBUILD_OPENRTM_SAMPLES=ON", "-DBUILD_PCL_PLUGIN=ON", "-DBUILD_SCENEEDIT_PLUGIN=ON", "-DBUILD_SCENE_EFFECTS_PLUGIN=ON", "-DBUILD_SPRING_MODEL_SAMPLE=ON", "-DBUILD_TRACKED_VEHICLE_SAMPLE=ON", "-DBUILD_VISION_SENSOR_RTM_SAMPLE=ON", "-DBUILD_VISION_SENSOR_SAMPLE=ON" 
+    system "cmake", ".", "-DCMAKE_PREFIX_PATH=/usr/local/opt/qt", "-DUSE_PYTHON3=OFF", "-DBUILD_CORBA_PLUGIN=ON", "-DBUILD_ODE_PLUGIN=ON", "-DBUILD_OPENRTM_PLUGIN=ON", "-DBUILD_OPENRTM_SAMPLES=ON", "-DBUILD_PCL_PLUGIN=ON", "-DBUILD_SCENEEDIT_PLUGIN=ON", "-DBUILD_SCENE_EFFECTS_PLUGIN=ON", "-DBUILD_SPRING_MODEL_SAMPLE=ON", "-DBUILD_TRACKED_VEHICLE_SAMPLE=ON", "-DBUILD_VISION_SENSOR_RTM_SAMPLE=ON", "-DBUILD_VISION_SENSOR_SAMPLE=ON", "-DENABLE_CORBA=ON"
     system "make", "install"
   end
 
