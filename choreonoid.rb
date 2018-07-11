@@ -30,7 +30,13 @@ class Choreonoid < Formula
 
   def install
     system "cmake", ".", "-DCMAKE_PREFIX_PATH=/usr/local/opt/qt", "-DUSE_PYTHON3=OFF", "-DBUILD_CORBA_PLUGIN=ON", "-DBUILD_ODE_PLUGIN=ON", "-DBUILD_OPENRTM_PLUGIN=ON", "-DBUILD_OPENRTM_SAMPLES=ON", "-DBUILD_PCL_PLUGIN=ON", "-DBUILD_SCENEEDIT_PLUGIN=ON", "-DBUILD_SCENE_EFFECTS_PLUGIN=ON", "-DBUILD_SPRING_MODEL_SAMPLE=ON", "-DBUILD_TRACKED_VEHICLE_SAMPLE=ON", "-DBUILD_VISION_SENSOR_RTM_SAMPLE=ON", "-DBUILD_VISION_SENSOR_SAMPLE=ON", "-DENABLE_CORBA=ON", "-DOPENRTM_DIR=/usr/local/opt/openrtm-aist/", "-DCMAKE_INSTALL_PREFIX=#{prefix}"
-    system "make", "install"
+    # system "make", "install"
+
+    # prefix.install 'bin'
+    # (bin+'brew-file').chmod 0755
+    # prefix.install 'lib'    
+    # prefix.install 'share'
+    # prefix.install 'ext'
     
   end
 
