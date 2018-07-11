@@ -8,12 +8,16 @@ $ brew tap sugarsweetrobotics/openrtm-aist
 $ brew install openrtm-aist
 ```
 
+### To develop your own RT-component, visit official web: http://openrtm.org
+
 ## How to Install OpenRTM-aist-Python via Homebrew
 
 ```shell
 $ brew tap sugarsweetrobotics/openrtm-aist
 $ brew install openrtm-aist-python
 ```
+
+### To develop your own RT-component, visit official web: http://openrtm.org
 
 ## How to Install OpenRTP via Homebrew
 
@@ -25,6 +29,15 @@ $ brew install openrtp
 ```shell
 $ openrtp
 ```
+## How to Install Choreonoid via Homebrew
 
+```shell
+$ brew tap sugarsweetrobotics/openrtm-aist
+$ brew install choreonoid
+```
 
+### Use choreonoid with
+```shell
+$ choreonoid
+```
 
