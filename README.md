@@ -21,6 +21,15 @@ $ brew install openrtm-aist-python
 
 ## How to Install OpenRTP via Homebrew
 
+### Install JDK7
+```shell
+$ brew tap cask-versions
+$ brew cask install zulu7
+$ export JAVA_HOME=/usr/libexec/java_home -v 1.7
+$ export PATH=$JAVA_HOME/bin:$PATH
+```
+ 
+### Install OpenRTP
 ```shell
 $ brew tap sugarsweetrobotics/openrtm-aist
 $ brew install openrtp
