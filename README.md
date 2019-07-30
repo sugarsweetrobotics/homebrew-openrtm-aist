@@ -25,7 +25,7 @@ $ brew install openrtm-aist-python
 ```shell
 $ brew tap cask-versions
 $ brew cask install zulu7
-$ export JAVA_HOME=/usr/libexec/java_home -v 1.7
+$ export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 $ export PATH=$JAVA_HOME/bin:$PATH
 ```
  
