@@ -15,15 +15,14 @@ class OpenrtmAist < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}"
-    # system "./configure"
-    # system "make"
-    system "make", "install"
-
-    # bin.install 'bin'
-    # share.install 'share'
-    # lib.install 'lib'
+    system "make"
+    system "make install"
   end
 
+  test do 
+
+    system "false"
+  end
 
   #bottle do
   #  root_url "https://raw.githubusercontent.com/sugarsweetrobotics/homebrew-openrtm-aist-bottles/master"
