@@ -16,7 +16,8 @@ class OpenrtmAist < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}"
-    system "make"
+    #system "make -k -j4"
+    system "make -j4"
     system "make install"
   end
 
