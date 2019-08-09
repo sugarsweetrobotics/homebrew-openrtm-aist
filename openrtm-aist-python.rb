@@ -5,7 +5,7 @@ class OpenrtmAistPython < Formula
   homepage "http://openrtm.org"
 
   url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/OpenRTM-aist-Python-1.2.1.tar.gz"
-  sha256 "601e45ccc49ab2099d8bb6c01ae4b2cf7da79422c96b7e00f68b9492438852b1"
+  sha256 "e47b786d334c80af660baf7c720db19ed420f5dde494af90ce129950976f899c"
   version "1.2.1"
 
   depends_on "omniorb-python"
