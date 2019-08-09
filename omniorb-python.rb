@@ -3,17 +3,15 @@ require "formula"
 class OmniorbPython < Formula
   homepage "http://omniorb.org"
 
-  url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/omniORBpy-4.2.2.tar.bz2"
-  sha256 "f3686e5f85b7c7fec83a1ec97dc6874d336e24830c0e68f1e1ecbd798fa1696a"
-  #  head "https://svn.openrtm.org/OpenRTM-aist/tags/RELEASE1.1.2"
-  version "4.2.2"
+  url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/omniORBpy-4.2.3.tar.bz2"
+  sha256 "5c601888e57c7664324357a1be50f2739c468057b46fba29821a25069fc0aee5"
+  version "4.2.3"
 
+  depends_on "python3"
   depends_on "omniorb"
 
   def install
-    system "./configure", "--prefix=#{prefix}", "--with-omniorb=/usr/local"
-    # system "./configure"
-    # system "make"
+    system "PYTHON=/usr/local/bin/python3", "./configure", "--prefix=#{prefix}", "--with-omniorb=/usr/local"
     system "make", "install"
   end
 end
