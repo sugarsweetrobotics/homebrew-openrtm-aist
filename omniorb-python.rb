@@ -11,7 +11,7 @@ class OmniorbPython < Formula
   depends_on "omniorb"
 
   def install
-    system "PYTHON=/usr/local/bin/python3", "./configure", "--prefix=#{prefix}", "--with-omniorb=/usr/local"
+    system "PYTHON=/usr/local/bin/python3 ./configure", "--prefix=#{prefix}", "--with-omniorb=/usr/local"
     system "make", "install"
   end
 end
