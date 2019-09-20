@@ -12,6 +12,7 @@ class OpenrtmAist < Formula
   depends_on "libtool"
   depends_on "doxygen"
   depends_on "omniorb"
+  depends_on "boost"
   depends_on "graphviz"
 
   def install
