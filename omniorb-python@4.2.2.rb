@@ -1,6 +1,6 @@
 require "formula"
 
-class OmniorbPython < Formula
+class OmniorbPythonAT422 < Formula
   homepage "http://omniorb.org"
 
   url "https://github.com/sugarsweetrobotics/homebrew-openrtm-srcs/raw/master/omniORBpy-4.2.2.tar.bz2"

@@ -1,6 +1,6 @@
 require "formula"
 
-class OpenrtmAistPython < Formula
+class OpenrtmAistPythonAT112 < Formula
   include Language::Python::Virtualenv
   homepage "http://openrtm.org"
 
