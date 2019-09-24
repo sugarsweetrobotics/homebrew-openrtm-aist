@@ -1,6 +1,7 @@
 cask 'openrtp' do 
   version "1.2.0"
-  sha256 "be2b6e1194e7721b1bcf6c4f960e7ffc9403a038fa0c3149f938b9a3210db2c4"
+  sha256 "ab1158950b5d81d660ee82f72e40e1263a2ff40de4a89c888b86526c547180fc"
+
 
   url "http://sugarsweetrobotics.com/pub/OpenRTM-aist/OpenRTP-1.2.0.dmg"
   name 'OpenRTP'
