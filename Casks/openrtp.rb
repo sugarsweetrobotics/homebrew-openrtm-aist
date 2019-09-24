@@ -7,5 +7,5 @@ cask 'openrtp' do
   name 'OpenRTP'
   homepage "http://openrtm.org"
 
-  app 'Eclipse.app', target: 'OpenRTP 1.2.0.app'
+  app 'Eclipse.app', target: 'OpenRTP-1.2.0.app'
 end
