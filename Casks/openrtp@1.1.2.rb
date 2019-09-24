@@ -1,7 +1,7 @@
 #require "formula"
 
 #class OpenrtpAT112 < Formula
-cask 'openrtp@1.1.2' do 
+cask 'openrtp112' do 
   homepage "http://openrtm.org"
 
   # url "http://sugarsweetrobotics.com/pub/OpenRTM-aist/OpenRTP-1.1.2.dmg"
