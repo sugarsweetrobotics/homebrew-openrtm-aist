@@ -13,10 +13,10 @@ cask 'openrtp' do
   version "1.2.0"
 
   # depends_on macos: '>= :leopard'
-  # app 'OpenRTP.app', target: 'OpenRTP-1.1.2.app'
-  def instal
-    bin.install openrtp
-  end
+  app 'Eclipse.app', target: 'OpenRTP-1.1.2.app'
+  #def instal
+  #  bin.install openrtp
+  #end
 
   #  def pour_bottle? do
   #   return true
